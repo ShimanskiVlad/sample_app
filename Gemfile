@@ -33,13 +33,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'libnotify', '0.8.0'
 end
 
 group :production do
