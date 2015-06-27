@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+gem 'bcrypt'
+gem 'validates_email_format_of'
 gem 'sprockets'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
