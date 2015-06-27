@@ -41,6 +41,7 @@ GEM
       execjs
       json
     bcrypt (3.1.10)
+    bootstrap (0.0.1)
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
@@ -66,6 +67,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     ffi (1.9.8)
     formatador (0.2.5)
     globalid (0.3.5)
@@ -236,16 +242,19 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  bootstrap
   bootstrap-sass
   capybara
   childprocess
   coffee-rails (~> 4.1.0)
+  factory_girl_rails
   guard-rspec
   guard-spork
   jbuilder (~> 2.0)
   jquery-rails
   libnotify (= 0.8.0)
   pg
+  pry
   rails (= 4.2.1)
   rails_12factor
   rspec-rails

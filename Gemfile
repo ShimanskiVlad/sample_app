@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'bcrypt'
+gem 'pry'
 gem 'validates_email_format_of'
 gem 'sprockets'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -15,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'bootstrap'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -47,6 +48,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'libnotify', '0.8.0'
+  gem 'factory_girl_rails'
 end
 
 group :production do
