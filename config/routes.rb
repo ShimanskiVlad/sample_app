@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   get 'static_pages/home'
 
@@ -11,6 +12,10 @@ Rails.application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
 
   match '/signup', to: 'users#new', via: 'get'
+
+  match '/signin', to: 'sessions#new', via: 'get'
+
+  match '/signout', to: 'sessions#destroy', via: 'delete'
 
   root :to => "static_pages#home"
 
